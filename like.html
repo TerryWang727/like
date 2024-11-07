@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我喜欢你</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff3e0;
+            color: #3e2723;
+        }
+        .container {
+            text-align: center;
+            border-radius: 15px;
+            padding: 30px;
+            background-color: #f8bbd0;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>你喜欢我吗？</h1>
+        <button onclick="revealSecret()">点击我</button>
+        <p id="secret" style="display:none;">我喜欢你，从遇见你的那一刻开始。</p>
+    </div>
+    <script>
+        function revealSecret() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+</body>
+</html>
